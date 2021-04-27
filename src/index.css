@@ -3,16 +3,16 @@
   padding: 0;
 }
 
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: teal;
-}
+.landing {
+  height: 120vh;
+  /* background-color: teal; */
+  background-image: url(image/Homepage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+ }
 
 
-/* .nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content:space-between;
@@ -21,10 +21,9 @@
   font-size: 20px;
   font-weight: 10px;
   font-style: bold;
-  color: rgb(15, 63, 63);
+  color: rgb(11, 37, 37);
 
 }   
-
 ul {
   list-style: none;
  margin-right: 10px;
@@ -33,22 +32,80 @@ ul {
 li {
  display: inline;
   margin-left: 10px;
-}  */ 
+}  
+
+.dashboard {
+  background-color: red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 754px;
+  width: 250px;
+}
+
+.ul {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+  margin: 20px;
+ list-style: none;
+  cursor: pointer;
+}
+
+.services {
+  background-color: whitesmoke;
+  font-size: 17px;
+  font-weight: 10px;
+  font-style: bold;
+  color: rgb(11, 37, 37);
+}
+
+.signout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: blue;
+  color: whitesmoke;
+  height: 30px;
+  width: 100px;
+  margin: 10px;
+}
+
+
+.mini-dashboard{
+  background-color: green;
+  display: flex;
+  justify-content: flex-end;
+  align-items:flex-end;
+  flex-direction: column;
+  height: 738px;
+  width: 1100px;
+  margin-left: 250px;
+  /* margin-bottom: 150px; */
+}
+
 
 .sign {
-  color:rgb(23, 54, 54);
+  color:rgb(11, 37, 37);
 }
 
 .signin-form {
+  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
-  height: 300px;
-  width: 300px;
+  height: 320px;
+  width: 400px;
+  margin-left: 500px;
+  margin-top: 180px;
   border-radius: 10px;
-  box-shadow: 10px 10px 5px  rgb(23, 54, 54);
+  box-shadow: 10px 10px 5px  rgb(11, 37, 37);
 }
 
 .signup-form {
@@ -58,9 +115,11 @@ li {
   align-items: center;
   background-color:whitesmoke;
   height: 580px;
-  width: 350px;
+  width: 500px;
+  margin-left: 400px;
+  margin-top: 35px;
   border-radius: 10px;
-  box-shadow: 10px 10px 5px rgb(23, 54, 54);
+  box-shadow: 10px 10px 5px rgb(11, 37, 37);
 }
 
 label {
@@ -76,7 +135,7 @@ label {
   font-size: large;
   font-weight: 15px;
   font-style: bold;
-  color: rgb(23, 54, 54);
+  color: rgb(11, 37, 37);
 }
 
 .form-control {
@@ -85,57 +144,58 @@ label {
   align-items: center;
   flex-direction: column;
   height: 20px;
-  width: 200px;
+  width: 250px;
   /* background-color: blue; */
   border-radius: 7px;
   font-size: small;
   font-weight: 10px;
   font-style: italic;
+  border: transparent;
   
 }
 
 ::placeholder {
   border: none;
-  color:  rgb(23, 54, 54)
+  color:  rgb(11, 37, 37);
 }
 
 .btn-primary {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:  rgb(23, 54, 54);
+  background-color:  rgb(11, 37, 37);
   color: whitesmoke;
   height: 35px;
-  width: 280px;
+  width: 260px;
   margin-top: 20px;
   font-size: large;
   font-weight: 10px;
   font-style: bold;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .btn-danger {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(23, 54, 54) ;
+  background-color: rgb(11, 37, 37) ;
   color: whitesmoke;
   height: 35px;
-  width: 280px;
+  width: 260px;
   margin-top: 20px;
   font-size: large;
   font-weight: 10px;
   font-style: bold;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .already {
   display: flex;
   justify-content: center;
   align-items: center;
-  color:rgb(23, 54, 54);
+  color:rgb(11, 37, 37);
   font-size: large;
   font-weight: 10px;
   font-style: bold;
@@ -144,8 +204,39 @@ label {
   margin-top: 25px;
 } 
 
+.link {
+   display: flex;
+   color:rgb(11, 37, 37);
+   margin-top: 20px;
+}
+
+.create {
+  color: rgb(11, 37, 37);
+  margin-left: 40px;
+  cursor: pointer;
+  
+}
+
+.new {
+   margin-left: 5px;
+   cursor: pointer;
+  }
+
 input {
   outline: none;
   padding: 5px;
 
-} 
+}
+
+.about {
+  color: rgb(11, 37, 37);
+}
+
+
+.login {
+  color: rgb(11, 37, 37);
+}
+
+.signup {
+  color: rgb(11, 37, 37);
+}   

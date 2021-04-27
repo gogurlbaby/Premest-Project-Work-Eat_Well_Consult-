@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { React, useState } from "react";
 import { Link, useHistory } from "react-router-dom"
 import InputField from "../components/inputfield";
 import Button from "../components/button"
@@ -17,21 +17,29 @@ function SignUp() {
   //   history.push("/")
   // }
 
-  function signup(e){
+  // function signup(e){
+  //   e.preventDefault();
+  //   console.log(values);
+  // }
+
+  const gotodashboard = (e) => {
     e.preventDefault();
     console.log(values);
+    history.push("/dashboard")
+
   }
+
   return (
       <form className="signup-form"> 
         <h1 className="sign">Create an Account</h1>
-        <InputField type="text" label="Firstname" name="firstname" placeholder="e.g. John" onchange={onchange}/>
-        <InputField type="text" label="Lastname" name="lastname" placeholder="e.g. Mensah" onchange={onchange}/>
+        <InputField type="text" label="Full Name" name="full name" placeholder="e.g. John Mensah" onchange={onchange}/>
+        <InputField type="text" label="Username" name="username" onchange={onchange}/>
         <InputField type="email" label="Email" name="email" placeholder="e.g. jome@gmail.com" onchange={onchange}/>
         <InputField type="password" label="Password" name="password" onchange={onchange}/>
         <InputField type="password" label="Confirm Password" name="cpassword" onchange={onchange}/>
         <div>
-          <Button text="Sign Up" classname="btn-danger" onclick={signup}/>
-          <Link to = "/" className="already">Already Have An Account?</Link>
+          <Button text="Sign Up" classname="btn-danger" onclick={gotodashboard}/>
+          <Link to = "/signin" className="already">Already Have An Account?</Link>
         </div>
       </form>
   );

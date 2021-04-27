@@ -1,19 +1,15 @@
-import { useState } from "react";
-import { useHistory } from "react-router";
+import { React, useState } from "react";
+import { Link, useHistory } from "react-router-dom";
 import Inputfield from "../components/inputfield";
 import Button from "../components/button"
 
 function SignIn() {
     const history= useHistory()
-    const[email, setemail] = useState('')
-    const[password, setpassword] = useState('')
+    const [values, setvalues] = useState({})
 
-    const onchangeemail = e => {
-        setemail(e.target.value)
-    }
 
-    const onchangepassword = (e) => {
-        setpassword(e.target.value)
+  const onchange = (e) => {
+    setvalues({...values, [e.target.name]: e.target.value})
     }
 
     // const gotosignup = (e) => {
@@ -21,22 +17,31 @@ function SignIn() {
     //     history.push("/signup")
     // }
 
-    function signin(e) {
-        e.preventDefault();
-
-        console.log({email,password});
-    }
+//     function signin(e) {
+//         e.preventDefault();
+//         console.log(values);
+// }
     
-    return (
-       <form className="signin-form">
-       <h1 className="sign">Sign In Here</h1>
-       <Inputfield type="email" label="Email" name="email" placeholder="e.g. jome@gmail.com" onchange={onchangeemail}/>
-       <Inputfield type="password" label="Password" name="password" onchange={onchangepassword}/>
+const gotodashboard = (e) => {
+  e.preventDefault();
+  console.log(values);
+  history.push("/dashboard")
+}
 
-       <div >
-       <Button text="Sign In" classname="btn-primary" onclick={signin}/>
-       
-       </div>     
+
+
+       return (
+       <form className="signin-form">
+       <h1 className="sign">Login Here</h1>
+       <Inputfield type="username" label="Username" name="username"  onchange={onchange}/>
+       <Inputfield type="password" label="Password" name="password" onchange={onchange}/>
+
+       <div>
+       <Button text="Sign In" classname="btn-primary" onclick={ gotodashboard}/>
+       <div className="link">
+       <h4 className="new">New Here?</h4> <Link to = "/signup" className="create">Create an Account?</Link>
+       </div>
+       </div>
        </form>
    )
    }

@@ -1,14 +1,15 @@
-import ApplicationRoutes from "./applicaionroutes"
-import Navbar from "./pages/navbar"
+import ApplicationRoutes from "./pages/applicationroutes"
+
 
 
 
 function App() {
   return (
   
-    <div className="App">
-    {/* <Navbar/>  */}
-   <ApplicationRoutes/>
+    
+    <div>
+
+<ApplicationRoutes/>
     </div>
 
 );

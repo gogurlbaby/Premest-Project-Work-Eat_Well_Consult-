@@ -2,7 +2,7 @@
 function Button({text, classname, onclick}) {
 
     return(
-        <buttton className={classname} onClick={onclick}>{text}</buttton>
+        <button className={classname} onClick={onclick}>{text}</button>
     )
 }
 
