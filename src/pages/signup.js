@@ -38,6 +38,7 @@ function SignUp() {
         <InputField type="password" label="Password" name="password" onchange={onchange}/>
         <InputField type="password" label="Confirm Password" name="cpassword" onchange={onchange}/>
         <div>
+          <h5 className="terms">By continuing, you agree to Eat Well Consult <br/> Terms & Conditions and Privacy Policy</h5>
           <Button text="Sign Up" classname="btn-danger" onclick={gotodashboard}/>
           <Link to = "/signin" className="already">Already Have An Account?</Link>
         </div>

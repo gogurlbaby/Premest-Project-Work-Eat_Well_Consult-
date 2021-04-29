@@ -4,11 +4,11 @@
 }
 
 .landing {
-  height: 120vh;
+  height: 110vh;
   /* background-color: teal; */
-  background-image: url(image/Homepage.jpg);
+  background-image: url(image/Homepage1.jpg);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
  }
 
 
@@ -31,7 +31,7 @@ ul {
 
 li {
  display: inline;
-  margin-left: 10px;
+  margin-left: 15px;
 }  
 
 .dashboard {
@@ -61,6 +61,7 @@ li {
   font-weight: 10px;
   font-style: bold;
   color: rgb(11, 37, 37);
+  /* border: transparent; */
 }
 
 .signout {
@@ -90,21 +91,20 @@ li {
 
 
 .sign {
-  color:rgb(11, 37, 37);
+  color: rgb(11, 37, 37);
 }
 
 .signin-form {
-  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
   height: 320px;
-  width: 400px;
-  margin-left: 500px;
+  width: 420px;
+  margin-left: 400px;
   margin-top: 180px;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 10px 10px 5px  rgb(11, 37, 37);
 }
 
@@ -116,9 +116,9 @@ li {
   background-color:whitesmoke;
   height: 580px;
   width: 500px;
-  margin-left: 400px;
+  margin-left: 360px;
   margin-top: 35px;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 10px 10px 5px rgb(11, 37, 37);
 }
 
@@ -151,7 +151,6 @@ label {
   font-weight: 10px;
   font-style: italic;
   border: transparent;
-  
 }
 
 ::placeholder {
@@ -163,7 +162,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:  rgb(11, 37, 37);
+  background-color: rgb(11, 37, 37);
   color: whitesmoke;
   height: 35px;
   width: 260px;
@@ -228,7 +227,22 @@ input {
 
 }
 
-.about {
+#about {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-top:330px;
+    margin-left: 200px;
+    height: 280px;
+    width: 680px; 
+    background-color: whitesmoke;
+    color: rgb(11, 37, 37);
+    border-radius: 5px;
+    border: transparent;
+    
+}
+
+.us {
   color: rgb(11, 37, 37);
 }
 
@@ -239,4 +253,29 @@ input {
 
 .signup {
   color: rgb(11, 37, 37);
+  
 }   
+
+.terms {
+  color: rgb(11, 37, 37);
+}
+
+.forgot {
+  color: rgb(11, 37, 37);
+  margin: 8px;
+}
+
+#service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   background-color: green;
+   margin-top: 50px;
+}
+
+.radio {
+  background-color: red;
+ 
+  display: flex;
+ align-content: space-around;
+}

@@ -1,16 +1,11 @@
 import ApplicationRoutes from "./pages/applicationroutes"
 
 
-
-
-function App() {
+function App({ Component, pageProps }) {
   return (
-  
-    
-    <div>
-
-<ApplicationRoutes/>
-    </div>
+   <div>
+ <ApplicationRoutes/>
+</div>
 
 );
 }

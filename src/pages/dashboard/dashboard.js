@@ -6,11 +6,11 @@ function Dashboard() {
     <div className="dashboard">
       
           <ul className="ul">
-            <li><h2>Menu</h2></li>
-            <li>Session With Dietitian</li>
-            <li>Exercise Videos</li>
+            <li><h2>Dashboard</h2></li>
+            <li>Home</li>
+            <li>Counselling With Dietitian</li>
+            <li>Fitness Exercises</li>
             <li>Weight Tracker</li>
-            <li>Diet Planner</li>
             <li>Profile</li>
             <li>Settings</li>
             <button className="signout">Sign Out</button>

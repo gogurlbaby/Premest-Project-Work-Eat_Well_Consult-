@@ -32,12 +32,13 @@ const gotodashboard = (e) => {
 
        return (
        <form className="signin-form">
-       <h1 className="sign">Login Here</h1>
+       <h1 className="sign">Sign In Here</h1>
        <Inputfield type="username" label="Username" name="username"  onchange={onchange}/>
        <Inputfield type="password" label="Password" name="password" onchange={onchange}/>
 
        <div>
        <Button text="Sign In" classname="btn-primary" onclick={ gotodashboard}/>
+       <h5 className="forgot">Forgot Password?</h5>
        <div className="link">
        <h4 className="new">New Here?</h4> <Link to = "/signup" className="create">Create an Account?</Link>
        </div>
