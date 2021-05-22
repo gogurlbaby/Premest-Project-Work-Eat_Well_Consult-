@@ -1,15 +1,124 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .landing {
-  height: 110vh;
-  /* background-color: teal; */
-  background-image: url(image/Homepage1.jpg);
-  background-repeat: no-repeat;
+   height: 100vh; 
+   /* background-color: teal;  */
+   background-image: url(image/vitali.jpg);
+   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.mini-landing {
+       height:300px;
+       width:430px;
+       background-color: transparent;
+       margin-top: 120px; 
+       margin-left: 20px;
+       font-size: larger;
+       font-weight: 10px;
+       font-style: bold;
+       color: whitesmoke;
  }
+
+
+.landing-button {
+  margin-top: 30px;
+  background-color: rgb(4, 27, 27);
+  color: whitesmoke;
+  height: 50px;
+  width: 200px;
+  font-size: larger;
+  font-weight: 5px;
+  font-style: bold;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+#landing-services {
+  height:50vh;
+  background-color: white;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; 
+}
+
+.nav-service {
+  color: rgb(4, 27, 27);
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 190px;
+  margin-left: 60px;
+  color: rgb(4, 27, 27);
+}
+
+.consultation, .fitness, .delivery {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  color: rgb(4, 27, 27);
+}
+
+.dietitian, .exercise, .food-delivery {
+    height:200px;
+    width: 400px;
+    margin-top: 30px;
+}
+
+.premium {
+    margin-left: 30px;
+    margin-top: 25px;
+    color: rgb(4, 27, 27);
+}
+
+.best {
+  margin-top: 25px;
+  color: rgb(4, 27, 27);
+}
+
+.request {
+   margin-top: 25px;
+   margin-left: 10px ;
+   color: rgb(4, 27, 27);
+}
+
+.footer {
+  height: 10vh;
+  margin-top: 25px;
+  background-color: rgba(8, 8, 37, 0.863);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; 
+  color: whitesmoke;
+}
+
+.footer-eatwell {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.mini-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 70px; */
+}
 
 
 .nav {
@@ -17,22 +126,59 @@
   align-items: center;
   justify-content:space-between;
   background-color: whitesmoke;
-  height: 100px;
+  color: rgb(4, 27, 27);
+  height: 90px;
   font-size: 20px;
   font-weight: 10px;
   font-style: bold;
-  color: rgb(11, 37, 37);
+}
 
-}   
+.eat {
+  margin-left: 20px;
+}
+
 ul {
   list-style: none;
- margin-right: 10px;
+ margin-right: 20px;
+ 
 }
 
 li {
  display: inline;
-  margin-left: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+  
 }  
+
+.background-box {
+  background-color: greenyellow;
+  color: black;
+  height: 400px;
+  width: 385px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+
+    
+
+
+.nav-components {
+  display: flex; 
+
+}
+
+.nav-button {
+  background-color: rgb(4, 27, 27);
+  color: whitesmoke;
+  height: 30px;
+  width: 70px;
+  font-size: medium;
+  font-weight: 5px;
+  font-style: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
 .dashboard {
   background-color: red;
@@ -43,6 +189,81 @@ li {
   height: 754px;
   width: 250px;
 }
+
+.navsidebar {
+  background-color: #060b26;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+} 
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: #060b26;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+} 
+
+.nav-menu.active {
+   left: 0;
+   transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+ font-size: 18px;
+   text-decoration: none;
+  color: #f5f5f5;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: #1a83ff;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: #060b26;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+span {
+ margin-left: 16px;
+}
+
+.home, 
 
 .ul {
   display: flex;
@@ -55,14 +276,7 @@ li {
   cursor: pointer;
 }
 
-.services {
-  background-color: whitesmoke;
-  font-size: 17px;
-  font-weight: 10px;
-  font-style: bold;
-  color: rgb(11, 37, 37);
-  /* border: transparent; */
-}
+
 
 .signout {
   display: flex;
@@ -94,19 +308,36 @@ li {
   color: rgb(11, 37, 37);
 }
 
+.signin-page {
+  /* height: 100vh; */
+  background-image: url(image/woman-eating.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  } 
+
 .signin-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: whitesmoke;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 200px;
+   margin-left: 550px;
+   background-color: whitesmoke;
   height: 320px;
-  width: 420px;
+  width: 420px; 
   margin-left: 400px;
-  margin-top: 180px;
+  margin-top: 180px; 
   border-radius: 12px;
-  box-shadow: 10px 10px 5px  rgb(11, 37, 37);
+  box-shadow: 2px 2px 2px 2px rgb(11, 37, 37) ;
 }
+
+
+.signup-page {
+  height: 100vh;
+  background-image: url(image/food-still.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
 
 .signup-form {
   display: flex;
@@ -116,10 +347,10 @@ li {
   background-color:whitesmoke;
   height: 580px;
   width: 500px;
-  margin-left: 360px;
-  margin-top: 35px;
+  margin-left: 450px; 
+  margin-top: 50px;
   border-radius: 12px;
-  box-shadow: 10px 10px 5px rgb(11, 37, 37);
+  box-shadow: 2px 2px 2px 2px rgb(11, 37, 37) ;
 }
 
 label {
@@ -135,7 +366,8 @@ label {
   font-size: large;
   font-weight: 15px;
   font-style: bold;
-  color: rgb(11, 37, 37);
+
+  
 }
 
 .form-control {
@@ -151,6 +383,7 @@ label {
   font-weight: 10px;
   font-style: italic;
   border: transparent;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 255, 0.685);
 }
 
 ::placeholder {
@@ -162,8 +395,8 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(11, 37, 37);
   color: whitesmoke;
+  background-color: rgb(11, 37, 37);
   height: 35px;
   width: 260px;
   margin-top: 20px;
@@ -227,28 +460,14 @@ input {
 
 }
 
-#about {
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    margin-top:330px;
-    margin-left: 200px;
-    height: 280px;
-    width: 680px; 
-    background-color: whitesmoke;
-    color: rgb(11, 37, 37);
-    border-radius: 5px;
-    border: transparent;
-    
-}
 
-.us {
-  color: rgb(11, 37, 37);
+.home {
+  color: whitesmoke;
 }
 
 
 .login {
-  color: rgb(11, 37, 37);
+  color: rgb(4, 27, 27);
 }
 
 .signup {
@@ -265,17 +484,14 @@ input {
   margin: 8px;
 }
 
-#service {
+/* #service {
   display: flex;
   flex-direction: column;
   align-items: center;
-   background-color: green;
+   background-color: whitesmoke;
    margin-top: 50px;
-}
+} */
 
-.radio {
-  background-color: red;
- 
-  display: flex;
- align-content: space-around;
-}
+/* .services {
+  color: whitesmoke;
+} */

@@ -31,6 +31,7 @@ const gotodashboard = (e) => {
 
 
        return (
+         <div className="signin-page">
        <form className="signin-form">
        <h1 className="sign">Sign In Here</h1>
        <Inputfield type="username" label="Username" name="username"  onchange={onchange}/>
@@ -44,6 +45,7 @@ const gotodashboard = (e) => {
        </div>
        </div>
        </form>
+       </div>
    )
    }
    
