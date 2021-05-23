@@ -2,7 +2,7 @@ import React from "react";
 
 function ConsultationWithDetitian() {
     return(
-        <div className="consultationwithdetitian">
+        <div className="consultationwithdietitian">
            Consultation With Detitian
         </div>
     );

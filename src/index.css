@@ -263,7 +263,13 @@ span {
  margin-left: 16px;
 }
 
-.home, 
+.homes, .consultationwithdietitian, .fitnessexercises, .profile, .settings, .signout {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
 
 .ul {
   display: flex;
@@ -277,7 +283,7 @@ span {
 }
 
 
-
+/* 
 .signout {
   display: flex;
   justify-content: center;
@@ -288,7 +294,7 @@ span {
   height: 30px;
   width: 100px;
   margin: 10px;
-}
+} */
 
 
 .mini-dashboard{

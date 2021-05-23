@@ -2,7 +2,7 @@ import React from "react";
 
 function FitnessExercise() {
     return(
-        <div className="fitnessexercise">
+        <div className="fitnessexercises">
          Fitness Exercise
         </div>
     );
