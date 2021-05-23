@@ -314,12 +314,12 @@ span {
   color: rgb(11, 37, 37);
 }
 
-.signin-page {
-  /* height: 100vh; */
+/* .signin-page {
+  height: 100vh; 
   background-image: url(image/woman-eating.png);
   background-repeat: no-repeat;
   background-position: left;
-  } 
+  } */ 
 
 .signin-form {
    display: flex;
